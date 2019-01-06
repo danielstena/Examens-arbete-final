@@ -1,0 +1,58 @@
+/*
+ Theme Name:   Generatepress Child
+ Theme URI:    https://wordpress.org/themes/generatepress/
+ Description:  Child theme of generatepress
+ Author:       Daniel Stenå
+ Author URI:   http://www.vitalhalsa.se
+ Template:     generatepress
+ Version:      1.0.0
+  License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  generatepress-child
+ */
+#logo_text{
+    font-size: 90px;
+    font-family: 'Tangerine', cursive;
+}
+a:hover, a:focus, a:active {
+    background-color: rgb(105, 103, 103) !important;
+}
+.main-navigation .main-nav ul li[class*="current-menu-"] > a {
+    color: #ffffff;
+    background-color: rgb(163, 141, 190);
+}
+.sub-menu{
+    background-color: white !important;
+    color:black;
+}
+.main-navigation .main-nav ul ul li a{
+    color:black !important;
+}
+ #masthead{
+    background-image: url(header_image.jpg);
+    height:170px;
+ }
+ .main-title{
+    margin-top: 25px;
+ }
+ #site-navigation{
+     background-color: white;
+     border-bottom: 10px solid #f0e9e9;
+ }
+ .main-navigation .main-nav ul li a, .menu-toggle {
+    color: black;
+    font-weight: bold;
+    font-family: 'Noto Sans', sans-serif;
+}
+.footer-widgets{
+    display: none;
+}
+#nav_menu-4{
+    border-radius: 10%;
+}
+
+/* Min height på constent */
+.inside-article{
+    min-height: 50vh;
+}

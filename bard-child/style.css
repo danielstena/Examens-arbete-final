@@ -12,7 +12,7 @@
  Text Domain:  bard-child
  */
 
-/* Logged in */
+/* Styling customer logged in */
 #page-178 > .post-header {
     text-align: left;
 }
@@ -20,15 +20,17 @@
  /* Footer */
  .footer-copyright {
     padding: 30px 0 20px;
-  }
-
-.page-content{
-    min-height: 37vh;
 }
+/* Min height på constent */
+.page-content{
+    min-height: 45vh !important;
+}
+
 /* header */
 .page-title{
     font-size: 38px;
 }
+
  /* OM VITAL HÄLSA */
 .wp-block-image figcaption {
     font-size: 17px;
@@ -40,16 +42,16 @@
  .wp-block-image img {
     margin: auto;
 }
- /*header*/
- .site-description{
-     display: none;
- }
- .entry-header{
-    height: 265px !important;
- }
 
- .post-content > .start_info{
-    text-align: center;
+ /*header*/
+.site-description{
+    display: none;
+}
+.entry-header{
+   height: 265px !important;
+}
+.post-content > .start_info{
+   text-align: center;
 }
 
 /* MOBIL CSS */
@@ -121,16 +123,6 @@
     }
 }
 
-/* START TEST  */
-
-/* @media screen and ( max-width: 640px ) {
-    .header-logo a {
-      font-size: 5px !important;
-      line-height: 1 !important;
-    }
-} */
-/* SLUT TEST */
-
 /*contact form */
 .post-content > .booking-information{
     text-align: center;
@@ -162,6 +154,7 @@ div.wpforms-container-full .wpforms-form .wpforms-field .wpforms-field-row:last-
 	outline: 0;
 	margin-top: 10px;
 }
+/* För att ta bort första bokstaven som stor */
 .drop-caps {
     float: none;
     font-size: inherit;
