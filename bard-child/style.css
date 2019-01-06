@@ -1,0 +1,173 @@
+/*
+ Theme Name:   Bard Child
+ Theme URI:    https://wordpress.org/themes/bard/
+ Description:  Child theme of Bard
+ Author:       Daniel Stenå
+ Author URI:   http://www.vitalhalsa.se
+ Template:     bard
+ Version:      1.0.0
+  License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  bard-child
+ */
+
+
+ sdfsdf
+/* Logged in */
+#page-178 > .post-header {
+    text-align: left;
+}
+
+ /* Footer */
+ .footer-copyright {
+    padding: 30px 0 20px;
+  }
+
+.page-content{
+    min-height: 37vh;
+}
+/* header */
+.page-title{
+    font-size: 38px;
+}
+ /* OM VITAL HÄLSA */
+.wp-block-image figcaption {
+    font-size: 17px;
+}
+.jane_image > img{
+    width: 40%;
+    border-radius: 20%;
+}
+ .wp-block-image img {
+    margin: auto;
+}
+ /*header*/
+ .site-description{
+     display: none;
+ }
+ .entry-header{
+    height: 265px !important;
+ }
+
+ .post-content > .start_info{
+    text-align: center;
+}
+
+/* MOBIL CSS */
+
+ /*  Page Header */
+@media screen and (max-width: 1280px) {
+    .entry-header {
+        height: 265px !important;
+   }
+}
+@media screen and (max-width: 1080px) {
+    .entry-header {
+        height: 220px !important;
+   }
+}
+@media screen and (max-width: 880px) {
+    .entry-header {
+        height: 120px !important;
+   }
+    .logo-img {
+        max-width: 300px !important;
+   }
+}
+@media screen and (max-width: 880px) {
+    .entry-header {
+        height: 120px !important;
+   }
+    .logo-img {
+        max-width: 300px !important;
+   }
+}
+@media screen and (max-width: 750px) {
+    .entry-header {
+        height: 250px !important;
+   }
+   .header-logo > a{ 
+       font-size: 145px !important;
+   }
+    .logo-img {
+        max-width: 250px !important;
+   }
+   .page-title{
+    font-size: 27px !important;
+    }
+    .post-content > p{
+        font-size: 21px;
+    }  
+}
+@media screen and (max-width: 690px) {
+    .entry-header {
+        height: 210px !important;
+   }
+    .logo-img {
+        max-width: 200px !important;
+   }
+   .sidebar-alt, .main-content, .featured-slider-area, #featured-links, .page-content select, .page-content input, .page-content textarea {
+        background-color: #ffffff;
+    }
+}
+@media screen and (max-width: 550px) {
+    .entry-header {
+        height: 100px !important;
+        padding: 50px 0 !important;
+   }
+}
+@media screen and (max-width: 480px){ 
+    .page-title{
+        font-size: 23px !important;
+    }
+}
+
+/* START TEST  */
+
+/* @media screen and ( max-width: 640px ) {
+    .header-logo a {
+      font-size: 5px !important;
+      line-height: 1 !important;
+    }
+} */
+/* SLUT TEST */
+
+/*contact form */
+.post-content > .booking-information{
+    text-align: center;
+    font-weight: 800;
+    color:red;
+}
+.wpforms-confirmation-container-full, .wpforms-confirmation-scroll{
+    color:red;
+    text-align: center
+}
+.wpforms-field-medium{
+    max-width: none !important;
+}
+
+div.wpforms-container-full .wpforms-form .wpforms-field .wpforms-field-row:last-of-type {
+    margin-bottom: 0;
+}
+
+#menu-toggle {
+	background-image: url("your image or icon url");
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 50px;
+	height: 50px;
+	text-indent: -9999px;
+	white-space: nowrap; 
+	background-color: transparent;
+	border: none;
+	outline: 0;
+	margin-top: 10px;
+}
+.drop-caps {
+    float: none;
+    font-size: inherit;
+    line-height: inherit;
+    padding: 0;
+    font-family: inherit;
+ }
