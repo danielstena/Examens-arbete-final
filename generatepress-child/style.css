@@ -14,9 +14,31 @@
 /* #left-sidebar{
     width: 20%;
 } */
+
+.navigation-search input[type="search"]:focus ,.navigation-search input[type="search"], .navigation-search input[type="search"]:active{
+    color: white;
+    background-color: black;
+}
+
+.entry-title, .start_info{
+    text-align: center;
+}
+.booking-information{
+    text-align: center;
+    font-weight: 800;
+    color:red;
+}
+.wpforms-confirmation-container-full, .wpforms-confirmation-scroll{
+    color:red;
+    text-align: center
+}
+.wpforms-field-medium{
+    max-width: none !important;
+}
 #logo_text{
     font-size: 12vh;
     font-family: 'Tangerine', cursive;
+    color:rgb(106, 131, 202)
 }
 a:hover, a:focus, a:active, .main-navigation .main-nav ul li:hover > a {
     background-color: rgb(153, 179, 233) !important;
