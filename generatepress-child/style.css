@@ -11,18 +11,16 @@
  Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
  Text Domain:  generatepress-child
  */
-/* #left-sidebar{
-    width: 20%;
-} */
-
-.navigation-search input[type="search"]:focus ,.navigation-search input[type="search"], .navigation-search input[type="search"]:active{
-    color: white;
-    background-color: black;
+#left-sidebar{
+    border-radius: 10%;
 }
+
 
 .entry-title, .start_info{
     text-align: center;
 }
+
+/* CONTACT FORM  */
 .booking-information{
     text-align: center;
     font-weight: 800;
@@ -40,8 +38,16 @@
     font-family: 'Tangerine', cursive;
     color:rgb(106, 131, 202)
 }
+
+/* SEARCH BAR */
+.navigation-search input[type="search"]:focus ,.navigation-search input[type="search"], .navigation-search input[type="search"]:active{
+    color: white;
+    background-color: black;
+}
+/* MENU AND SUB MENU */
 a:hover, a:focus, a:active, .main-navigation .main-nav ul li:hover > a {
     background-color: rgb(153, 179, 233) !important;
+    color: white !important;
 }
 .main-navigation .main-nav ul ul li[class*="current-menu-"] > a, .main-navigation .main-nav ul li[class*="current-menu-"] > a {
     color: #ffffff;
@@ -53,24 +59,26 @@ a:hover, a:focus, a:active, .main-navigation .main-nav ul li:hover > a {
 .main-navigation .main-nav ul ul li a{
     color:black !important;
 }
- #masthead{
-    background-image: url(header_image.jpg);
-    height:170px;
- }
- .main-title{
-    margin-top: 2.5vh;
- }
- #site-navigation{
-     background-color: white;
-     border-bottom: 10px solid #f0e9e9;
- }
+#site-navigation{
+    background-color: white;
+    border-bottom: 10px solid #f0e9e9;
+}
 .sub-menu, .main-navigation .main-nav ul li a, .menu-toggle {
     color: black;
     font-weight: bold;
     font-family: 'Noto Sans', sans-serif;
 }
 
-/* Min height på constent */
+/* HEADER STYLING */
+#masthead{
+    background-image: url(header_image.jpg);
+    height:170px;
+}
+.main-title{
+    margin-top: 2.5vh;
+} 
+
+/* CONTENT */
 .inside-article{
     min-height: 32vh;
 }
