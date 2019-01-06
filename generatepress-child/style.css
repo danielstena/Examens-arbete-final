@@ -11,20 +11,22 @@
  Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
  Text Domain:  generatepress-child
  */
+/* #left-sidebar{
+    width: 20%;
+} */
 #logo_text{
-    font-size: 90px;
+    font-size: 12vh;
     font-family: 'Tangerine', cursive;
 }
-a:hover, a:focus, a:active {
-    background-color: rgb(105, 103, 103) !important;
+a:hover, a:focus, a:active, .main-navigation .main-nav ul li:hover > a {
+    background-color: rgb(153, 179, 233) !important;
 }
-.main-navigation .main-nav ul li[class*="current-menu-"] > a {
+.main-navigation .main-nav ul ul li[class*="current-menu-"] > a, .main-navigation .main-nav ul li[class*="current-menu-"] > a {
     color: #ffffff;
-    background-color: rgb(163, 141, 190);
+    background-color: rgb(152, 174, 219);
 }
 .sub-menu{
     background-color: white !important;
-    color:black;
 }
 .main-navigation .main-nav ul ul li a{
     color:black !important;
@@ -34,25 +36,19 @@ a:hover, a:focus, a:active {
     height:170px;
  }
  .main-title{
-    margin-top: 25px;
+    margin-top: 2.5vh;
  }
  #site-navigation{
      background-color: white;
      border-bottom: 10px solid #f0e9e9;
  }
- .main-navigation .main-nav ul li a, .menu-toggle {
+.sub-menu, .main-navigation .main-nav ul li a, .menu-toggle {
     color: black;
     font-weight: bold;
     font-family: 'Noto Sans', sans-serif;
 }
-.footer-widgets{
-    display: none;
-}
-#nav_menu-4{
-    border-radius: 10%;
-}
 
 /* Min height på constent */
 .inside-article{
-    min-height: 50vh;
+    min-height: 32vh;
 }
