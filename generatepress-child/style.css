@@ -11,10 +11,20 @@
  Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
  Text Domain:  generatepress-child
  */
+
+/* 
+    FONTS
+    TEXT:
+    font-family: 'Noto Sans', sans-serif;
+    HEADING:
+    font-family: 'Poiret One', cursive;
+    LOGO:
+    font-family: 'Tangerine', cursive;
+*/
+
 #left-sidebar{
     border-radius: 10%;
 }
-
 
 .entry-title, .start_info{
     text-align: center;
@@ -24,10 +34,9 @@
 .booking-information{
     text-align: center;
     font-weight: 800;
-    color:red;
+    color:rgb(106, 131, 202)
 }
 .wpforms-confirmation-container-full, .wpforms-confirmation-scroll{
-    color:red;
     text-align: center
 }
 .wpforms-field-medium{
@@ -38,14 +47,20 @@
     font-family: 'Tangerine', cursive;
     color:rgb(106, 131, 202)
 }
+.collapseomatic_content{
+    background-color: rgb(210, 222, 245);
+    padding: 30px;
+    margin-bottom: 20px;
+    box-shadow: 0px 1px 5px rgba(0,0,0, 0.1);
 
+}
 /* SEARCH BAR */
 .navigation-search input[type="search"]:focus ,.navigation-search input[type="search"], .navigation-search input[type="search"]:active{
     color: white;
     background-color: black;
 }
 /* MENU AND SUB MENU */
-a:hover, a:focus, a:active, .main-navigation .main-nav ul li:hover > a {
+.main-navigation .main-nav ul li:hover > a {
     background-color: rgb(153, 179, 233) !important;
     color: white !important;
 }
@@ -61,24 +76,48 @@ a:hover, a:focus, a:active, .main-navigation .main-nav ul li:hover > a {
 }
 #site-navigation{
     background-color: white;
-    border-bottom: 10px solid #f0e9e9;
+    box-shadow: 0px 1px 5px rgba(0,0,0, 0.1);
 }
 .sub-menu, .main-navigation .main-nav ul li a, .menu-toggle {
     color: black;
-    font-weight: bold;
     font-family: 'Noto Sans', sans-serif;
 }
 
 /* HEADER STYLING */
 #masthead{
     background-image: url(header_image.jpg);
-    height:170px;
+    height:24vh;
 }
-.main-title{
-    margin-top: 2.5vh;
-} 
 
 /* CONTENT */
 .inside-article{
     min-height: 32vh;
+}
+/* Footer text */
+.copyright-bar, .copyright-bar > a {
+    color: rgb(152, 174, 219);
+}
+#frontpaige_container{
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+width: 100%;
+}
+.frontpage_cards{
+    padding: 0 0 15vh 0;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Poiret One', cursive;
+}
+.frontpage_images{
+    width:20vh;
+    height:10vh;
+    box-shadow: 0px 1px 5px rgba(0,0,0, 0.1);
+}
+.separate-containers .inside-article{
+    padding:10vh;
+}
+.inside-article .frontpage{
+    background-color: red !important;
 }

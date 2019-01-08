@@ -159,9 +159,9 @@ if ( ! function_exists( 'generate_construct_site_title' ) ) {
 		// Build our site title.
 		$site_title = apply_filters( 'generate_site_title_output', sprintf(
 			'<%1$s class="main-title" itemprop="headline">
-				<a id="logo_text" href="%2$s" rel="home">
+				<p id="logo_text" rel="home">
 					%3$s
-				</a>
+				</p>
 			</%1$s>',
 			( is_front_page() && is_home() ) ? 'h1' : 'p',
 			esc_url( apply_filters( 'generate_site_title_href', home_url( '/' ) ) ),

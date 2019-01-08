@@ -20,6 +20,7 @@ add_action( 'wp_enqueue_scripts', 'my_theme_enqueue_styles' );
 add_action('wp_head', 'wpse_43672_wp_head');
 function wpse_43672_wp_head(){
     ?>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Poiret+One|Tangerine" rel="stylesheet">
     <?php 
 }
