@@ -1,29 +1,31 @@
 /*
- Theme Name:   Generatepress Child
- Theme URI:    https://wordpress.org/themes/generatepress/
- Description:  Child theme of generatepress
- Author:       Daniel Stenå
- Author URI:   http://www.vitalhalsa.se
- Template:     generatepress
- Version:      1.0.0
-  License:      GNU General Public License v2 or later
- License URI:  http://www.gnu.org/licenses/gpl-2.0.html
- Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
- Text Domain:  generatepress-child
- */
-
-/* 
-    FONTS
-    TEXT:
-    font-family: 'Noto Sans', sans-serif;
-    HEADING:
-    font-family: 'Poiret One', cursive;
-    LOGO:
-    font-family: 'Tangerine', cursive;
+    Theme Name:   Generatepress Child
+    Theme URI:    https://wordpress.org/themes/generatepress/
+    Description:  Child theme of generatepress
+    Author:       Daniel Stenå
+    Author URI:   http://www.vitalhalsa.se
+    Template:     generatepress
+    Version:      1.0.0
+    License:      GNU General Public License v2 or later
+    License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+    Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+    Text Domain:  generatepress-child
 */
 
-#left-sidebar{
-    border-radius: 10%;
+/* 
+    FONTS:
+    TEXT:
+        font-family: 'Noto Sans', sans-serif;
+    HEADING:o
+        font-family: 'Poiret One', cursive;
+    LOGO:
+        font-family: 'Tangerine', cursive;
+*/
+
+.widget:last-child, .separate-containers .widget:last-child {
+    margin-bottom: 0;
+    background-color: rgb(236, 235, 235);
+    border-radius: 10px;
 }
 
 .entry-title, .start_info{
@@ -36,12 +38,15 @@
     font-weight: 800;
     color:rgb(106, 131, 202)
 }
+
 .wpforms-confirmation-container-full, .wpforms-confirmation-scroll{
     text-align: center
 }
+
 .wpforms-field-medium{
     max-width: none !important;
 }
+
 #logo_text{
     font-size: 12vh;
     font-family: 'Tangerine', cursive;
@@ -60,26 +65,32 @@
     background-color: black;
 }
 /* MENU AND SUB MENU */
-.main-navigation .main-nav ul li:hover > a {
+.main-navigation .main-nav ul li:hover > a, .main-navigation .main-nav ul li:focus > a {
     background-color: rgb(153, 179, 233) !important;
     color: white !important;
+    text-decoration: none;
 }
 .main-navigation .main-nav ul ul li[class*="current-menu-"] > a, .main-navigation .main-nav ul li[class*="current-menu-"] > a {
     color: #ffffff;
     background-color: rgb(152, 174, 219);
 }
-.sub-menu{
-    background-color: white !important;
-}
+
 .main-navigation .main-nav ul ul li a{
     color:black !important;
+    font-family: 'Noto Sans', sans-serif;
 }
-#site-navigation{
+#site-navigation, .main-navigation ul ul{
     background-color: white;
     box-shadow: 0px 1px 5px rgba(0,0,0, 0.1);
+    font-family: 'Noto Sans', sans-serif;
 }
 .sub-menu, .main-navigation .main-nav ul li a, .menu-toggle {
     color: black;
+    font-family: 'Noto Sans', sans-serif;
+}
+.main-navigation .main-nav ul li[class*="current-menu-"] > a {
+    color: #ffffff !important;
+    background-color: rgb(152, 174, 219) !important;
     font-family: 'Noto Sans', sans-serif;
 }
 
@@ -91,33 +102,87 @@
 
 /* CONTENT */
 .inside-article{
-    min-height: 32vh;
+    /* min-height: 32vh; */
 }
 /* Footer text */
-.copyright-bar, .copyright-bar > a {
-    color: rgb(152, 174, 219);
+.site-info, .copyright-bar > a {
+    /* color: rgb(152, 174, 219); */
+    background-color: rgb(236, 235, 235);
+    color: black;
 }
+.copyright-bar{
+    margin:auto;
+    display: flex;
+    width: 70%;
+    justify-content: space-evenly;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1.6vh;
+}
+.social_media_links{
+    display: flex;
+    width:100%;
+    justify-content: center;
+}
+#instagram, #facebook{
+    margin:10px;
+}
+/* Frontpage */
 #frontpaige_container{
 display: flex;
-flex-direction: row;
+flex-wrap: wrap;
 justify-content: space-evenly;
 width: 100%;
 }
 .frontpage_cards{
-    padding: 0 0 15vh 0;
     text-align: center;
     font-size: 25px;
     font-weight: bold;
     font-family: 'Poiret One', cursive;
+    max-height: 300;
+    max-width: 300px;
+    margin-bottom:15px;
 }
 .frontpage_images{
-    width:20vh;
-    height:10vh;
+    height:200px;
+    width:200px;
     box-shadow: 0px 1px 5px rgba(0,0,0, 0.1);
 }
+/* Content */
 .separate-containers .inside-article{
-    padding:10vh;
+    padding:5vh;
+    min-height: 55vh;
 }
-.inside-article .frontpage{
-    background-color: red !important;
+
+/* prislista */
+.entry-content{
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Extra css som ska kategoriseras */
+
+/* Länken på bokningsformuläret */
+.inför_ditt_besok{
+    text-align: center;
+}
+
+/* checkout */
+#customer_details{
+    display: flex;
+    justify-content: center;
+}
+#customer_details > .col-1{
+    min-width:100%;
+}
+#customer_details > .col-2{
+    display: none;
+}
+#order_review_heading, .woocommerce-info{
+    margin-top:2vh;
+    text-align: center;
+}
+
+.woocommerce form .form-row label, .woocommerce-page form .form-row label {
+    min-width: 15vw;
 }

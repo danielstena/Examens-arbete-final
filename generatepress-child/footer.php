@@ -9,7 +9,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 ?>
-
 	</div><!-- #content -->
 </div><!-- #page -->
 
@@ -39,6 +38,7 @@ do_action( 'generate_before_footer' );
 	 * @hooked generate_construct_footer_widgets - 5
 	 * @hooked generate_construct_footer - 10
 	 */
+
 	do_action( 'generate_footer' );
 
 	/**
