@@ -71,14 +71,7 @@ if ( ! function_exists( 'generate_construct_footer' ) ) {
                          * @hooked generate_add_footer_info - 10
                          */
                         do_action( 'generate_credits' );
-                        ?>
-                    </div>
-                        
-                    <div>
-                        jane.forslund@live.se
-                    </div>
-                    <div>
-                        ORGNR: SE751030488901
+                        ?> - jane.forslund@live.se - ORGNR: SE751030488901
                     </div>
 				</div>
 			</div>

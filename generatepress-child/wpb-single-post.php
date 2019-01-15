@@ -45,22 +45,4 @@ $path = get_stylesheet_directory_uri() . "/assets/img/";
 
 get_footer();
 
-if ( ! function_exists( 'generate_add_footer_info' ) ) {
-	add_action( 'generate_credits', 'generate_add_footer_info' );
-	/**
-	 * Add the copyright to the footer
-	 *
-	 * @since 0.1
-	 */
-	function generate_add_footer_info() {
-		$copyright = sprintf( '<span class="copyright">&copy; %1$s %2$s</span> &bull; %4$s <a href="%3$s" itemprop="url">%5$s</a>',
-			date( 'Y' ),
-			get_bloginfo( 'name' ),
-			esc_url( 'https://vitalhalsa.se' ),
-			_x( 'Powered by', 'Vital Hälsa', 'Vital Hälsa' ),
-			__( '', '' )
-		);
 
-		echo apply_filters( 'generate_copyright', $copyright ); // WPCS: XSS ok.
-	}
-}

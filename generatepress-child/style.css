@@ -72,7 +72,7 @@
 }
 .main-navigation .main-nav ul ul li[class*="current-menu-"] > a, .main-navigation .main-nav ul li[class*="current-menu-"] > a {
     color: #ffffff;
-    background-color: rgb(152, 174, 219);
+    background-color: rgb(152, 174, 219) !important;
 }
 
 .main-navigation .main-nav ul ul li a{
@@ -167,7 +167,7 @@ width: 100%;
     text-align: center;
 }
 
-/* checkout */
+/* CHECKOUT */
 #customer_details{
     display: flex;
     justify-content: center;
@@ -182,7 +182,21 @@ width: 100%;
     margin-top:2vh;
     text-align: center;
 }
-
 .woocommerce form .form-row label, .woocommerce-page form .form-row label {
     min-width: 15vw;
+}
+
+/* CONTACT FORM */
+#birs_appointment_form{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.birs_section{
+    display: none;
+}
+#birs_appointment_form div{
+    display: flex;
+    justify-content: center;
+    width: 40vw;
 }
