@@ -1,5 +1,6 @@
 <?php
 
+// FUNCTION FOR TURNING OF CAPITAL FIRST LETTER
 function turnoffcapital(){
     return true;
 }
@@ -17,15 +18,14 @@ wp_enqueue_style( 'child-style',
 }
 add_action( 'wp_enqueue_scripts', 'my_theme_enqueue_styles' );
 
-// Function för att lägga till google fonts i header
+// FUNCTION FOR ADDING GOOGLE FONTS IN HEADER
 add_action('wp_head', 'wpse_43672_wp_head');
 function wpse_43672_wp_head(){
     ?>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Poiret+One|Tangerine" rel="stylesheet">
     <?php 
 }
-
+// FUNCTION FOR CHANGING FOOTER
 if ( ! function_exists( 'generate_construct_footer' ) ) {
 	add_action( 'generate_footer', 'generate_construct_footer' );
 	/**
@@ -71,7 +71,7 @@ if ( ! function_exists( 'generate_construct_footer' ) ) {
                          * @hooked generate_add_footer_info - 10
                          */
                         do_action( 'generate_credits' );
-                        ?> - jane.forslund@live.se - ORGNR: SE751030488901
+                        ?> - ORGNR: SE751030488901
                     </div>
 				</div>
 			</div>
@@ -79,7 +79,7 @@ if ( ! function_exists( 'generate_construct_footer' ) ) {
 		<?php
 	}
 }
-// Funktion för att flytta positionen på kr till efter priset.
+// FUNCTION FOR MOVING POSITION OF CURRENCY TO AFTER THE PRICE IN THE WEBHOP
 add_filter( 'woocommerce_price_format', 'custom_price_format', 10, 2 );
     function custom_price_format( $format, $curreny_pos ) {
 
